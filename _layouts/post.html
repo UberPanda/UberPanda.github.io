@@ -38,9 +38,11 @@ layout: base
           {% endfor %}
         </div>
       {% endif %}
-
+      
       <article role="main" class="blog-post">
-        {{ content }}
+        <div style="text-align: justify">
+          {{ content }}
+        </div>
       </article>
 
       {% if page.tags.size > 0 %}
